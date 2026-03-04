@@ -1,0 +1,812 @@
+# 30 Day Microsoft SOC Engineer Deep Learning Plan
+
+---
+
+# Week 1 (Days 1–6)
+
+## Microsoft Security Architecture & Log Pipeline
+
+**Goal:** Understand how enterprise SOC actually works internally.
+
+---
+
+# Day 1 – Enterprise SOC Architecture
+
+## Learn
+
+Understand the **SOC ecosystem**.
+
+### Components
+
+* Endpoint
+* Identity
+* Email
+* Cloud
+* SIEM
+* SOAR
+* Ticketing
+
+### Key Microsoft Products
+
+* Microsoft Sentinel
+* Microsoft Defender for Endpoint
+* Microsoft 365 Defender
+* Microsoft Entra ID
+* ServiceNow
+
+## Learn the SOC Data Flow
+
+```
+Endpoint Activity
+↓
+Defender Detection
+↓
+Log Analytics Workspace
+↓
+Sentinel Analytics Rule
+↓
+Alert
+↓
+Incident
+↓
+SOC Investigation
+↓
+ServiceNow Ticket
+```
+
+## GitHub Post
+
+Create repository:
+
+```
+enterprise-soc-learning
+```
+
+First post:
+
+```
+Day-01-SOC-Architecture.md
+```
+
+### Write
+
+* What is SOC
+* SIEM vs EDR vs XDR
+* Microsoft SOC architecture diagram
+
+---
+
+# Day 2 – Azure Tenant + Log Analytics
+
+## Learn
+
+### Azure hierarchy
+
+```
+Tenant
+└ Subscription
+   └ Resource Group
+      └ Resource
+```
+
+Understand:
+
+* Log Analytics Workspace
+* Data storage
+* Tables
+
+### Important Tables
+
+* SigninLogs
+* SecurityEvent
+* AzureActivity
+* DeviceEvents
+* DeviceProcessEvents
+* OfficeActivity
+
+## GitHub Post
+
+```
+Day-02-Log-Analytics-Workspace.md
+```
+
+### Include
+
+* Diagram
+* Explanation of log tables
+* Data ingestion process
+
+---
+
+# Day 3 – Data Connectors & Log Ingestion
+
+## Learn Log Flow
+
+```
+Log Source
+↓
+Connector
+↓
+Log Analytics
+↓
+Sentinel Rule
+↓
+Alert
+```
+
+### Important Connectors
+
+* Azure AD
+* Defender
+* Office365
+* Windows Security
+* Syslog
+
+Understand:
+
+* Parsing
+* Normalization
+
+## GitHub Post
+
+```
+Day-03-Log-Ingestion-Pipeline.md
+```
+
+### Explain
+
+* How logs travel through pipeline
+* Structured tables
+
+---
+
+# Day 4 – Alerts vs Incidents
+
+## Learn
+
+### Alert
+
+Triggered by **detection rule**.
+
+### Incident
+
+One or more **alerts grouped together**.
+
+### Why Grouping Exists
+
+* Alert fatigue reduction
+* Correlation across sources
+
+### Understand Entity Mapping
+
+Entities:
+
+* User
+* IP
+* Host
+* Process
+* File
+
+## GitHub Post
+
+```
+Day-04-Alert-vs-Incident.md
+```
+
+### Include
+
+* Severity levels
+* Entity mapping concept
+
+---
+
+# Day 5 – SIEM vs EDR vs XDR vs SOAR
+
+## Understand Differences
+
+### SIEM
+
+* Log aggregation
+* Correlation
+
+### EDR
+
+* Endpoint telemetry
+* Process monitoring
+
+### XDR
+
+* Cross-domain correlation
+
+### SOAR
+
+* Automation
+
+### Example Mapping
+
+* Sentinel → **SIEM**
+* Defender → **EDR**
+* M365 Defender → **XDR**
+* Sentinel Playbooks → **SOAR**
+
+## GitHub Post
+
+```
+Day-05-Security-Platform-Comparison.md
+```
+
+Create a **comparison table**.
+
+---
+
+# Day 6 – Full Detection Pipeline
+
+Now connect everything.
+
+## Architecture
+
+```
+Endpoint
+↓
+Defender
+↓
+Log Analytics
+↓
+Sentinel Rule
+↓
+Alert
+↓
+Incident
+↓
+SOC Investigation
+↓
+ServiceNow Ticket
+```
+
+## GitHub Post
+
+```
+Day-06-Full-Detection-Pipeline.md
+```
+
+Add **architecture diagram**.
+
+---
+
+# Week 2 (Days 7–12)
+
+## KQL for Detection Engineering
+
+**Goal:** Think like a detection engineer.
+
+---
+
+# Day 7 – KQL Basics
+
+## Learn Syntax
+
+### Example Query
+
+```
+SigninLogs
+| where ResultType != 0
+| project TimeGenerated, UserPrincipalName, IPAddress
+```
+
+### Operators
+
+* where
+* project
+* limit
+* distinct
+* count
+
+## GitHub Post
+
+```
+Day-07-KQL-Basics.md
+```
+
+Add **10 example queries**.
+
+---
+
+# Day 8 – Aggregation Queries
+
+## Learn
+
+* summarize
+* bin()
+* count()
+
+### Example – Brute Force Detection
+
+```
+SigninLogs
+| where ResultType != 0
+| summarize FailedAttempts=count() by IPAddress, bin(TimeGenerated,5m)
+| where FailedAttempts > 10
+```
+
+## GitHub Post
+
+```
+Day-08-BruteForce-Detection.md
+```
+
+Explain the **detection logic**.
+
+---
+
+# Day 9 – Join Queries
+
+## Learn Correlation
+
+### Example
+
+```
+SigninLogs
+| join IdentityInfo on UserPrincipalName
+```
+
+### Concept
+
+Multi-table correlation.
+
+## GitHub Post
+
+```
+Day-09-KQL-Joins.md
+```
+
+---
+
+# Day 10 – Process Detection
+
+Use:
+
+```
+DeviceProcessEvents
+```
+
+### Example
+
+```
+DeviceProcessEvents
+| where ProcessCommandLine contains "powershell"
+```
+
+Detect:
+
+* Encoded commands
+* Suspicious scripts
+
+## GitHub Post
+
+```
+Day-10-PowerShell-Detection.md
+```
+
+---
+
+# Day 11 – Rare Process Detection
+
+### Example
+
+```
+DeviceProcessEvents
+| summarize count() by ProcessName
+| where count_ < 5
+```
+
+### Concept
+
+Anomaly detection.
+
+## GitHub Post
+
+```
+Day-11-Rare-Process-Detection.md
+```
+
+---
+
+# Day 12 – Detection Tuning
+
+## Learn Tuning
+
+* Exclude service accounts
+* Exclude trusted IPs
+* Adjust thresholds
+
+## GitHub Post
+
+```
+Day-12-Detection-Tuning.md
+```
+
+---
+
+# Week 3 (Days 13–18)
+
+## Sentinel SIEM Operations
+
+---
+
+# Day 13 – Analytics Rules
+
+### Types
+
+* Scheduled
+* Near Real-Time
+* Fusion
+
+Understand:
+
+* Frequency
+* Lookback window
+* Threshold
+* Severity
+
+## GitHub Post
+
+```
+Day-13-Sentinel-Analytics-Rules.md
+```
+
+---
+
+# Day 14 – Detection Lifecycle
+
+```
+Detection idea
+↓
+Query
+↓
+Rule
+↓
+Alert
+↓
+Incident
+↓
+Tuning
+```
+
+## GitHub Post
+
+```
+Day-14-Detection-Lifecycle.md
+```
+
+---
+
+# Day 15 – Incident Queue
+
+## Learn
+
+* Filter
+* Severity
+* Status
+* Ownership
+
+### Status Lifecycle
+
+* New
+* In Progress
+* On Hold
+* Closed
+
+## GitHub Post
+
+```
+Day-15-Incident-Queue-Workflow.md
+```
+
+---
+
+# Day 16 – Investigation Graph
+
+## Learn
+
+* Entity relationships
+* Timeline reconstruction
+
+## GitHub Post
+
+```
+Day-16-Investigation-Graph.md
+```
+
+---
+
+# Day 17 – Investigation Case Study
+
+### Example Scenario
+
+```
+Multiple login failures
+↓
+Successful login
+↓
+Suspicious PowerShell
+```
+
+## GitHub Post
+
+```
+Day-17-BruteForce-Investigation.md
+```
+
+Write a **full SOC investigation report**.
+
+---
+
+# Day 18 – Correlation Across Sources
+
+### Example
+
+```
+SigninLogs
++
+DeviceProcessEvents
++
+OfficeActivity
+```
+
+## GitHub Post
+
+```
+Day-18-CrossSource-Correlation.md
+```
+
+---
+
+# Week 4 (Days 19–24)
+
+## Endpoint & Identity Investigation
+
+---
+
+# Day 19 – Defender for Endpoint
+
+## Learn
+
+* Device timeline
+* Alert page
+* File hash lookup
+
+## GitHub Post
+
+```
+Day-19-Defender-Endpoint-Overview.md
+```
+
+---
+
+# Day 20 – Process Tree Analysis
+
+### Example Chain
+
+```
+Word.exe
+↓
+powershell.exe
+↓
+malware.exe
+```
+
+## GitHub Post
+
+```
+Day-20-Process-Tree-Investigation.md
+```
+
+---
+
+# Day 21 – Lateral Movement Indicators
+
+### Example Techniques
+
+* PsExec
+* WMI
+* Remote PowerShell
+
+## GitHub Post
+
+```
+Day-21-Lateral-Movement-Indicators.md
+```
+
+---
+
+# Day 22 – Identity Investigation
+
+Use:
+
+* SigninLogs
+* AuditLogs
+
+Detect:
+
+* Impossible travel
+* Token abuse
+
+## GitHub Post
+
+```
+Day-22-Identity-Investigation.md
+```
+
+---
+
+# Day 23 – Privilege Escalation
+
+### Example
+
+Global Admin assignment.
+
+### Query
+
+```
+AuditLogs
+| where OperationName contains "Add member to role"
+```
+
+## GitHub Post
+
+```
+Day-23-Privilege-Escalation.md
+```
+
+---
+
+# Day 24 – Identity + Endpoint Correlation
+
+### Example
+
+```
+Suspicious login
++
+Malware execution
+```
+
+## GitHub Post
+
+```
+Day-24-Identity-Endpoint-Correlation.md
+```
+
+---
+
+# Week 5 (Days 25–30)
+
+## Enterprise Operations
+
+---
+
+# Day 25 – Email Security Investigation
+
+## Learn
+
+* Phishing analysis
+* Header inspection
+* Message trace
+
+## GitHub Post
+
+```
+Day-25-Phishing-Investigation.md
+```
+
+---
+
+# Day 26 – Azure Activity Monitoring
+
+### Important Logs
+
+```
+AzureActivity
+```
+
+Detect:
+
+* VM creation
+* Role assignment
+* Resource deletion
+
+## GitHub Post
+
+```
+Day-26-Azure-Activity-Monitoring.md
+```
+
+---
+
+# Day 27 – Cloud Privilege Escalation
+
+### Example
+
+```
+Contributor → Owner role
+```
+
+## GitHub Post
+
+```
+Day-27-Cloud-Privilege-Escalation.md
+```
+
+---
+
+# Day 28 – ServiceNow Workflow
+
+Understand:
+
+```
+Alert → Incident → Ticket
+```
+
+### Fields
+
+* Priority
+* Severity
+* SLA
+* Assignment
+
+## GitHub Post
+
+```
+Day-28-ServiceNow-Incident-Lifecycle.md
+```
+
+---
+
+# Day 29 – SOAR Automation
+
+### Example Playbook
+
+```
+Alert Trigger
+↓
+Enrich IP
+↓
+Check threat intel
+↓
+Disable account
+↓
+Notify SOC
+```
+
+## GitHub Post
+
+```
+Day-29-SOAR-Playbooks.md
+```
+
+---
+
+# Day 30 – Final SOC Case Study
+
+Simulate **complete attack investigation**.
+
+### Scenario
+
+```
+Phishing email
+↓
+User credential theft
+↓
+Suspicious login
+↓
+PowerShell execution
+↓
+Lateral movement
+```
+
+Write:
+
+```
+Day-30-Full-SOC-Incident-Report.md
+```
+
+Create a **full SOC incident investigation report**.
