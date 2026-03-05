@@ -83,7 +83,7 @@ ServiceNow Ticket\
 ↓\
 Incident Response
 
-![alt text](Sources/SOC_Workflow.png)
+![alt text](Sources/Day-01-SOC_Workflow.png)
 
 ------------------------------------------------------------------------
 
