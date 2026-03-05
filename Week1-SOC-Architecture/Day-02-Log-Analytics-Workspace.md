@@ -77,6 +77,8 @@ This hierarchy defines:
 -   billing
 -   infrastructure organization
 
+![alt text](Sources/Day-02-Azure_Hierarchy.png)
+
 ------------------------------------------------------------------------
 
 # 1. Azure Tenant
@@ -276,6 +278,8 @@ Log Analytics solves this problem by providing:
     SOC Investigation
 
 Log Analytics is the **telemetry layer of the SOC architecture.**
+
+![alt text](Sources/Day-02-Log-Ingestion-Pipeline.png)
 
 ------------------------------------------------------------------------
 
