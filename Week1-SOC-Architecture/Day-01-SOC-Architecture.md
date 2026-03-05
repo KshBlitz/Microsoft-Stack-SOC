@@ -83,6 +83,8 @@ ServiceNow Ticket\
 ↓\
 Incident Response
 
+![alt text](SOC_Workflow.png)
+
 ------------------------------------------------------------------------
 
 # 4. Core SOC Components
