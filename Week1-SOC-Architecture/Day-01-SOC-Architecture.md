@@ -440,7 +440,217 @@ Important SOC terms:
 
 ------------------------------------------------------------------------
 
-# 13. Interview Talking Points
+# 13. SIEM vs EDR vs XDR
+
+Understanding the difference between **SIEM, EDR, and XDR** is critical
+for SOC analysts because these technologies work together in enterprise
+security operations.
+
+They serve different purposes in the detection and investigation
+pipeline.
+
+------------------------------------------------------------------------
+
+## SIEM (Security Information and Event Management)
+
+A **SIEM** platform collects and analyzes security logs from multiple
+systems across the organization.
+
+### Purpose
+
+Centralized monitoring and correlation of security events.
+
+### Key Capabilities
+
+-   Log aggregation from multiple sources
+-   Detection rules and alert generation
+-   Event correlation across systems
+-   Threat hunting using queries
+-   Incident management
+
+### Example Log Sources
+
+-   Identity logs (SigninLogs)
+-   Windows Security logs (SecurityEvent)
+-   Azure activity logs (AzureActivity)
+-   Email activity logs (OfficeActivity)
+-   Endpoint telemetry
+
+### Microsoft SIEM
+
+**Microsoft Sentinel**
+
+### Example Detection Workflow
+
+    Log Source
+    ↓
+    Log Analytics Workspace
+    ↓
+    Sentinel Analytics Rule
+    ↓
+    Alert
+    ↓
+    Incident
+    ↓
+    SOC Investigation
+
+### SOC Analyst Use
+
+**L1 analysts** - Monitor alerts - Perform initial triage
+
+**L2 analysts** - Write KQL detections - Correlate events across sources
+
+------------------------------------------------------------------------
+
+## EDR (Endpoint Detection and Response)
+
+An **EDR** platform monitors activity on endpoints such as laptops,
+servers, and virtual machines.
+
+It focuses on detecting **malicious behavior occurring directly on
+devices**.
+
+### Purpose
+
+Detect suspicious activity on endpoints.
+
+### Endpoint Telemetry Examples
+
+-   Process creation
+-   File modifications
+-   Registry changes
+-   Network connections
+-   Command-line execution
+
+### Example Tables
+
+    DeviceProcessEvents
+    DeviceFileEvents
+    DeviceNetworkEvents
+    DeviceRegistryEvents
+
+### Microsoft EDR
+
+**Microsoft Defender for Endpoint**
+
+### Example Detection Scenario
+
+    Word.exe
+    ↓
+    powershell.exe
+    ↓
+    Encoded PowerShell command
+    ↓
+    EDR detection triggered
+
+### SOC Investigation Example
+
+Analyst checks:
+
+-   Process tree
+-   Command-line arguments
+-   File hash reputation
+-   Network connections
+
+------------------------------------------------------------------------
+
+## XDR (Extended Detection and Response)
+
+**XDR** expands detection across multiple security domains.
+
+Instead of analyzing only endpoint activity, it correlates data across:
+
+-   Identity
+-   Endpoint
+-   Email
+-   Cloud workloads
+
+### Purpose
+
+Cross-domain attack detection and correlation.
+
+### Microsoft XDR Platform
+
+**Microsoft 365 Defender**
+
+It integrates telemetry from:
+
+-   Microsoft Defender for Endpoint
+-   Microsoft Defender for Identity
+-   Microsoft Defender for Office365
+-   Microsoft Defender for Cloud Apps
+
+### Example Cross-Domain Attack Detection
+
+    Phishing Email
+    ↓
+    User credential theft
+    ↓
+    Suspicious login detected
+    ↓
+    PowerShell execution on endpoint
+    ↓
+    XDR correlates events
+    ↓
+    Incident generated
+
+This allows SOC teams to see the **full attack chain**.
+
+------------------------------------------------------------------------
+
+# Comparison Table
+
+  -------------------------------------------------------------------------
+  Feature           SIEM                EDR               XDR
+  ----------------- ------------------- ----------------- -----------------
+  Primary Focus     Log aggregation     Endpoint          Cross-domain
+                                        monitoring        detection
+
+  Data Sources      All systems         Endpoints         Multiple security
+                                                          products
+
+  Detection Method  Correlation rules   Behavioral        Cross-platform
+                                        detection         correlation
+
+  Investigation     Organization-wide   Device-level      Full attack chain
+  Scope                                                   
+
+  Microsoft Tool    Microsoft Sentinel  Defender for      Microsoft 365
+                                        Endpoint          Defender
+  -------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+# How They Work Together in Enterprise SOC
+
+In modern Microsoft security architecture these tools operate together.
+
+    Endpoint Activity
+    ↓
+    Defender for Endpoint (EDR)
+    ↓
+    Microsoft 365 Defender (XDR correlation)
+    ↓
+    Log Analytics Workspace
+    ↓
+    Microsoft Sentinel (SIEM detection rules)
+    ↓
+    Alert
+    ↓
+    Incident
+    ↓
+    SOC Investigation
+
+------------------------------------------------------------------------
+
+# Key Takeaways
+
+-   **SIEM** collects and analyzes logs across the entire organization.
+-   **EDR** monitors detailed activity on endpoints.
+-   **XDR** correlates security events across multiple domains.
+-   Modern SOC environments combine all three to detect complex attacks.
+
+# 14. Interview Talking Points
 
 1.  SOC collects telemetry from endpoints, identity systems, email, and
     cloud infrastructure.
@@ -455,7 +665,7 @@ Important SOC terms:
 
 ------------------------------------------------------------------------
 
-# 14. Key Takeaways
+# 15. Key Takeaways
 
 -   SOC centralizes security monitoring.
 -   Microsoft Sentinel acts as the SIEM.
