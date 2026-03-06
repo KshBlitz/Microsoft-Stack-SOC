@@ -71,6 +71,8 @@ Understanding this pipeline helps analysts understand **where security
 events originate, how they are processed, and how detections are
 triggered**.
 
+![alt text](Sources/Day-03-Log-Injestion-Pipeline.png)
+
 ------------------------------------------------------------------------
 
 # What Are Data Connectors?
@@ -162,14 +164,14 @@ Once logs are ingested, they are stored inside **Log Analytics tables**.
 
 Example tables:
 
-  Table                 Purpose
-  --------------------- ------------------------------
-  SigninLogs            User authentication logs
-  SecurityEvent         Windows security logs
-  AzureActivity         Azure control plane activity
-  DeviceEvents          Endpoint security telemetry
-  DeviceProcessEvents   Process execution logs
-  OfficeActivity        Microsoft 365 user activity
+| Table | Purpose |
+|------|---------|
+| SigninLogs | User authentication logs |
+| SecurityEvent | Windows security logs |
+| AzureActivity | Azure control plane activity |
+| DeviceEvents | Endpoint security telemetry |
+| DeviceProcessEvents | Process execution logs |
+| OfficeActivity | Microsoft 365 user activity |
 
 Each table contains **structured columns** such as:
 
@@ -181,6 +183,8 @@ Each table contains **structured columns** such as:
 -   Activity
 
 Structured tables allow analysts to **query logs using KQL**.
+
+![alt text](Sources/Day-03-Structured-Tables.png)
 
 ------------------------------------------------------------------------
 
