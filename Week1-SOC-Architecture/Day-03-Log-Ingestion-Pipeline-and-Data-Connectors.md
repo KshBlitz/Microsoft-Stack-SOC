@@ -269,13 +269,13 @@ These are ingested into the **SecurityEvent** table.
 
 Important Event IDs:
 
-  Event ID   Meaning
-  ---------- ----------------------
-  4624       Successful login
-  4625       Failed login
-  4688       Process creation
-  4720       User account created
-  4728       User added to group
+| Event ID | Meaning |
+|---------|---------|
+| 4624 | Successful login |
+| 4625 | Failed login |
+| 4688 | Process creation |
+| 4720 | User account created |
+| 4728 | User added to group |
 
 These logs are essential for detecting:
 
