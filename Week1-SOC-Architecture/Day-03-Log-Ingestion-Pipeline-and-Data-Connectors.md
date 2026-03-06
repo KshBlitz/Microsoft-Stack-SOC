@@ -311,14 +311,12 @@ Example raw log:
 
     User login from IP 192.168.1.20 using Chrome
 
-After parsing:
-
-  Field               Value
-  ------------------- -------------------
-  UserPrincipalName   alice@company.com
-  IPAddress           192.168.1.20
-  Application         Chrome
-  ResultType          Success
+| Field | Value |
+|------|------|
+| UserPrincipalName | alice@company.com |
+| IPAddress | 192.168.1.20 |
+| Application | Chrome |
+| ResultType | Success |
 
 Structured fields allow analysts to run detection queries.
 
