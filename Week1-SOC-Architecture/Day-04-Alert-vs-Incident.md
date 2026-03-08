@@ -244,12 +244,12 @@ Severity determines investigation priority.
 
 Example SLA:
 
-  Severity   Response Time
-  ---------- ---------------
-  Critical   15 minutes
-  High       30 minutes
-  Medium     2 hours
-  Low        24 hours
+| Severity | Response Time |
+|---------|---------------|
+| Critical | 15 minutes |
+| High | 30 minutes |
+| Medium | 2 hours |
+| Low | 24 hours |
 
 ------------------------------------------------------------------------
 
