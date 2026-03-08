@@ -199,13 +199,13 @@ SIEM systems group alerts based on shared entities.
 
 Common correlation attributes:
 
-  Attribute   Description
-  ----------- ---------------------
-  User        same account
-  IP          same source address
-  Host        same device
-  Process     same executable
-  File        same artifact
+| Attribute | Description |
+|----------|-------------|
+| User | same account |
+| IP | same source address |
+| Host | same device |
+| Process | same executable |
+| File | same artifact |
 
 Example:
 
