@@ -100,13 +100,13 @@ Example alert:
 
 Alerts include:
 
-  Field        Description
-  ------------ ---------------------------
-  Alert Name   detection rule
-  Severity     risk level
-  Entities     user, IP, host
-  Evidence     logs triggering detection
-  Timestamp    event time
+| Field | Description |
+|------|-------------|
+| Alert Name | detection rule |
+| Severity | risk level |
+| Entities | user, IP, host |
+| Evidence | logs triggering detection |
+| Timestamp | event time |
 
 ------------------------------------------------------------------------
 
