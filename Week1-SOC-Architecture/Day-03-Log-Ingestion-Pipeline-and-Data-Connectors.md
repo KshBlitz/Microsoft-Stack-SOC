@@ -328,11 +328,11 @@ Different systems may represent the same data differently.
 
 Example:
 
-  System     Field Name
-  ---------- ------------
-  Firewall   src_ip
-  Linux      client_ip
-  Azure      IPAddress
+| System | Field Name |
+|-------|------------|
+| Firewall | src_ip |
+| Linux | client_ip |
+| Azure | IPAddress |
 
 Normalization converts these to a **standard schema**.
 
