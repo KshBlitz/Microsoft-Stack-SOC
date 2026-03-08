@@ -306,13 +306,13 @@ Entity mapping links alerts to real-world objects.
 
 Common entities:
 
-  Entity       Description
-  ------------ -----------------------------
-  User         account performing activity
-  IP Address   network origin
-  Host         device
-  Process      running program
-  File         suspicious artifact
+| Entity | Description |
+|------|-------------|
+| User | account performing activity |
+| IP Address | network origin |
+| Host | device |
+| Process | running program |
+| File | suspicious artifact |
 
 Example entity mapping:
 
