@@ -233,12 +233,12 @@ These alerts become:
 
 Alerts are prioritized using severity levels.
 
-  Severity   Meaning
-  ---------- -------------------------
-  Low        suspicious but low risk
-  Medium     potential threat
-  High       likely malicious
-  Critical   confirmed attack
+| Severity | Meaning |
+|---------|---------|
+| Low | suspicious but low risk |
+| Medium | potential threat |
+| High | likely malicious |
+| Critical | confirmed attack |
 
 Severity determines investigation priority.
 
