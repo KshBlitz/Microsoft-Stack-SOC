@@ -225,6 +225,8 @@ These alerts become:
 
     Incident: Possible Account Compromise
 
+![alt text](Sources/Day-04-Alert-Corrlation.png)
+
 ------------------------------------------------------------------------
 
 # Alert Severity
@@ -374,6 +376,8 @@ If malicious:
 
     Escalate to L2
     Initiate containment
+
+![alt text](Sources/Day-04-Incident-Lifecycle.png)
 
 ------------------------------------------------------------------------
 
