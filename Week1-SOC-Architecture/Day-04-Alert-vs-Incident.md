@@ -40,13 +40,13 @@ Typical enterprise pipeline:
 
 Security telemetry sources include:
 
-  Source                  Example Table
-  ----------------------- ---------------------
-  Entra ID                SigninLogs
-  Windows Servers         SecurityEvent
-  Defender for Endpoint   DeviceProcessEvents
-  Azure Control Plane     AzureActivity
-  Microsoft 365           OfficeActivity
+| Source | Example Table |
+|------|---------------|
+| Entra ID | SigninLogs |
+| Windows Servers | SecurityEvent |
+| Defender for Endpoint | DeviceProcessEvents |
+| Azure Control Plane | AzureActivity |
+| Microsoft 365 | OfficeActivity |
 
 Large organizations generate **millions of log events per day**.
 
