@@ -112,6 +112,8 @@ Different security technologies detect different parts of the attack.
 
 These tools do not replace each other.
 
+![alt text](Sources/Day-05-Comparision.png)
+
 They **complement each other** inside the SOC detection architecture.
 
 ------------------------------------------------------------------------
