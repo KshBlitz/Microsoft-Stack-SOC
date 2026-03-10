@@ -6,11 +6,11 @@ By Day 6 we connect **everything learned in Week 1** into a complete enterprise 
 
 Previous topics:
 
-Day 1 – SOC Architecture
-Day 2 – Log Analytics Workspace
-Day 3 – Log Ingestion Pipeline
-Day 4 – Alerts vs Incidents
-Day 5 – SIEM vs EDR vs XDR vs SOAR
+- Day 1 – SOC Architecture
+- Day 2 – Log Analytics Workspace
+- Day 3 – Log Ingestion Pipeline
+- Day 4 – Alerts vs Incidents
+- Day 5 – SIEM vs EDR vs XDR vs SOAR
 
 Day 6 connects these components into the **complete enterprise detection pipeline used in real Security Operations Centers (SOC)**.
 
