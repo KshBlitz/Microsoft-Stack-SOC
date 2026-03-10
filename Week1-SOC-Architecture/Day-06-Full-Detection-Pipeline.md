@@ -142,6 +142,7 @@ ServiceNow Incident Ticket
 ↓
 Response & Remediation
 ```
+![alt text](Sources/Day-06-SOC-Architecture.jpg)
 
 Each stage performs a **specific function in the detection pipeline**.
 
@@ -368,6 +369,8 @@ The incident contains:
 * attack timeline
 * investigation graph
 
+![alt text](Sources/Day-06-Alert-Incident-Correlation.jpg)
+
 ---
 
 # 11. Stage 8 – SOC Investigation
@@ -380,6 +383,8 @@ Initial triage
 Log correlation
 Impact analysis
 Threat validation
+
+![alt text](Sources/Day-06-Cyber-Kill-Chain.webp)
 
 Typical investigation questions:
 
