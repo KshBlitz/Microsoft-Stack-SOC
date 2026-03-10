@@ -192,12 +192,12 @@ EDR continuously monitors endpoint behavior.
 
 Telemetry collected includes:
 
-Process execution
-Command-line arguments
-File creation and modification
-Network connections
-Registry changes
-Credential access behavior
+- Process execution
+- Command-line arguments
+- File creation and modification
+- Network connections
+- Registry changes
+- Credential access behavior
 
 Example telemetry tables:
 
@@ -228,13 +228,13 @@ The **Log Analytics Workspace** is the central log storage platform.
 
 It collects logs from multiple sources:
 
-Microsoft Defender
-Microsoft Entra ID
-Azure Activity Logs
-Office 365
-Windows Security Logs
-Syslog devices
-Network firewalls
+- Microsoft Defender
+- Microsoft Entra ID
+- Azure Activity Logs
+- Office 365
+- Windows Security Logs
+- Syslog devices
+- Network firewalls
 
 Example tables stored in Log Analytics:
 
@@ -264,11 +264,11 @@ Microsoft Sentinel is the **Security Information and Event Management (SIEM)** p
 
 Sentinel performs several key functions:
 
-Detection rule execution
-Alert correlation
-Incident management
-Threat hunting
-Automation via playbooks
+- Detection rule execution
+- Alert correlation
+- Incident management
+- Threat hunting
+- Automation via playbooks
 
 Sentinel continuously scans incoming telemetry.
 
@@ -299,11 +299,11 @@ SigninLogs
 
 Detection strategies used in enterprise SOC:
 
-Threshold detection
-Rare behavior detection
-Behavioral anomalies
-Cross-log correlation
-Threat intelligence matching
+- Threshold detection
+- Rare behavior detection
+- Behavioral anomalies
+- Cross-log correlation
+- Threat intelligence matching
 
 Example correlation detection:
 
@@ -379,20 +379,20 @@ The incident enters the **SOC investigation queue**.
 
 Analysts perform:
 
-Initial triage  
-Log correlation
-Impact analysis
-Threat validation
+- Initial triage  
+- Log correlation
+- Impact analysis
+- Threat validation
 
 ![alt text](Sources/Day-06-Cyber-Kill-Chain.webp)
 
 Typical investigation questions:
 
-What triggered this alert?
-Which user performed the activity?
-Which device was involved?
-What commands were executed?
-Is the behavior malicious?
+- What triggered this alert?
+- Which user performed the activity?
+- Which device was involved?
+- What commands were executed?
+- Is the behavior malicious?
 
 Investigation tools include:
 
@@ -417,16 +417,16 @@ ServiceNow Ticket
 
 Ticket fields include:
 
-Incident severity
-Affected systems
-Investigation notes
-Remediation steps
+- Incident severity
+- Affected systems
+- Investigation notes
+- Remediation steps
 
 ServiceNow allows collaboration between:
 
-SOC team
-IT operations
-Security engineering
+- SOC team
+- IT operations
+- Security engineering
 
 ---
 
@@ -476,10 +476,10 @@ ServiceNow Ticket
 
 Responsibilities:
 
-Monitor alert queue
-Perform initial triage
-Validate suspicious activity
-Escalate incidents
+- Monitor alert queue
+- Perform initial triage
+- Validate suspicious activity
+- Escalate incidents
 
 Typical workflow:
 
@@ -497,10 +497,10 @@ False positive OR escalate
 
 Responsibilities:
 
-Deep investigation
-Root cause analysis
-Attack timeline reconstruction
-Detection rule tuning
+- Deep investigation
+- Root cause analysis
+- Attack timeline reconstruction
+- Detection rule tuning
 
 L2 analysts often write advanced **KQL detection queries**.
 
@@ -512,10 +512,10 @@ Not every detection indicates an attack.
 
 Common false positives include:
 
-Users mistyping passwords
-Automated scripts
-Security scanners
-Administrative PowerShell usage
+- Users mistyping passwords
+- Automated scripts
+- Security scanners
+- Administrative PowerShell usage
 
 SOC analysts must analyze **business context**.
 
@@ -527,10 +527,10 @@ Detection tuning reduces noise.
 
 Common tuning methods:
 
-Exclude trusted IP ranges
-Exclude service accounts
-Adjust detection thresholds
-Correlate multiple signals
+- Exclude trusted IP ranges
+- Exclude service accounts
+- Adjust detection thresholds
+- Correlate multiple signals
 
 Example improvement:
 
@@ -554,16 +554,16 @@ new device login
 
 Important terms:
 
-SIEM
-EDR
-XDR
-Security Telemetry
-Detection Engineering
-Alert Correlation
-Incident Management
-Threat Hunting
-SOC Investigation
-Security Analytics Rules
+- SIEM
+- EDR
+- XDR
+- Security Telemetry
+- Detection Engineering
+- Alert Correlation
+- Incident Management
+- Threat Hunting
+- SOC Investigation
+- Security Analytics Rules
 
 ---
 
@@ -584,16 +584,16 @@ Strong explanation for SOC interviews:
 
 The enterprise detection pipeline connects:
 
-Endpoint monitoring
-Log ingestion
-SIEM detection
-Alert generation
-Incident investigation
-Enterprise ticketing
+- Endpoint monitoring
+- Log ingestion
+- SIEM detection
+- Alert generation
+- Incident investigation
+- Enterprise ticketing
 
 Understanding this workflow is essential for:
 
-SOC operations
-Detection engineering
-Incident response
-Enterprise security architecture
+- SOC operations
+- Detection engineering
+- Incident response
+- Enterprise security architecture
