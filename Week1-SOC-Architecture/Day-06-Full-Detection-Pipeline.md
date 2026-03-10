@@ -594,6 +594,9 @@ The enterprise detection pipeline connects:
 Understanding this workflow is essential for:
 
 *SOC operations
+
 *Detection engineering
+
 *Incident response
+
 *Enterprise security architecture
