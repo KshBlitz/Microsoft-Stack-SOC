@@ -40,6 +40,8 @@ ServiceNow Ticket
 
 During **SOC investigations**, analysts must query security telemetry stored inside **Log Analytics tables**.
 
+![alt text](Sources/Day-07-Pipeline-Intro.png)
+
 This is where **KQL becomes essential**.
 
 SOC analysts use KQL to:
@@ -78,6 +80,8 @@ KQL is designed to be:
 - fast
 - readable
 - optimized for log analytics
+
+![alt text](Sources/Day-07-Decision-Tree.png)
 
 ---
 
@@ -126,6 +130,8 @@ Reconstruct attacker timelines.
 DeviceEvents
 | order by TimeGenerated desc
 ```
+
+![alt text](Sources/Day-07-KQL-Workflow.png)
 
 ---
 
