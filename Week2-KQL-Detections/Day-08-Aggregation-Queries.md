@@ -10,6 +10,8 @@ By the end of this module you will be able to:
 * Combine filters and aggregations for security investigations
 * Build detection-style queries used in SOC environments
 
+![alt text](Sources/Day-08-Aggregation.webp)
+
 ---
 
 # 1. What Are Aggregation Queries?
@@ -294,6 +296,8 @@ Only show suspicious activity.
 
 This identifies **possible brute-force attacks**.
 
+
+![alt text](Sources/Day-08-Brute-force.webp)
 ---
 
 # 9. Detecting Password Spray Attacks
