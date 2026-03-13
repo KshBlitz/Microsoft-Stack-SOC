@@ -256,13 +256,13 @@ Without endpoint telemetry, these attacks remain invisible.
 
 Examples of telemetry:
 
-  Activity                 Description
-  ------------------------ ------------------------
-  Process execution        Programs launched
-  Command-line arguments   PowerShell commands
-  File creation            Malware dropped
-  Network connections      C2 traffic
-  Registry changes         Persistence mechanisms
+| Activity | Description |
+|---------|-------------|
+| Process execution | Programs launched |
+| Command-line arguments | PowerShell commands |
+| File creation | Malware dropped |
+| Network connections | C2 traffic |
+| Registry changes | Persistence mechanisms |
 
 ------------------------------------------------------------------------
 
