@@ -89,12 +89,12 @@ Modern enterprise environments generate enormous telemetry volumes.
 
 Examples:
 
-Endpoint telemetry
-Authentication events
-Network activity
-Email activity
-Cloud infrastructure logs
-Application logs
+- Endpoint telemetry
+- Authentication events
+- Network activity
+- Email activity
+- Cloud infrastructure logs
+- Application logs
 
 Large enterprises can generate:
 
