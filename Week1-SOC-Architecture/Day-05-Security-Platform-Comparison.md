@@ -103,12 +103,12 @@ Different security technologies detect different parts of the attack.
 
 # Overview of SOC Security Technologies
 
-  Technology   Primary Focus
-  ------------ ------------------------------
-  SIEM         Centralized log analysis
-  EDR          Endpoint behavior monitoring
-  XDR          Cross-domain correlation
-  SOAR         Automated incident response
+| Technology | Primary Focus |
+|-----------|---------------|
+| SIEM | Centralized log analysis |
+| EDR | Endpoint behavior monitoring |
+| XDR | Cross-domain correlation |
+| SOAR | Automated incident response |
 
 These tools do not replace each other.
 
