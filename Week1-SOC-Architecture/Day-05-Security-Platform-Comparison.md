@@ -147,13 +147,13 @@ SIEM platforms collect logs from multiple sources.
 
 Examples:
 
-  Source         Example Logs
-  -------------- ------------------------
-  Identity       Sign-in logs
-  Endpoints      Windows security logs
-  Cloud          Azure Activity logs
-  Applications   Application logs
-  Email          Exchange activity logs
+| Source | Example Logs |
+|-------|--------------|
+| Identity | Sign-in logs |
+| Endpoints | Windows security logs |
+| Cloud | Azure Activity logs |
+| Applications | Application logs |
+| Email | Exchange activity logs |
 
 All logs are centralized into:
 
