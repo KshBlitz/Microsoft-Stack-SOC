@@ -163,6 +163,8 @@ SOC Investigation
 
 Join queries run **inside Sentinel analytics rules or hunting queries**.
 
+![alt text](Sources/Day-09-Correlation-Workflow.png)
+
 ---
 
 # Core Components of Join Queries
