@@ -462,6 +462,8 @@ Cloud access | AzureActivity
 
 Join queries correlate these datasets.
 
+![alt text](Sources/Day-09-Attack-Timeline.jpg)
+
 ---
 
 # SOC Analyst Responsibilities
