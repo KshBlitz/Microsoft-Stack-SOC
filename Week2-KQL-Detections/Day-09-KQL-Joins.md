@@ -100,6 +100,8 @@ UserPrincipalName
 
 as the **linking key**.
 
+![alt text](Sources/Day-09-Table-Operations.png)
+
 ---
 
 # Why Join Queries Exist in Enterprise Security
