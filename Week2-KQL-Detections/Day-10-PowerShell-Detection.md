@@ -44,6 +44,8 @@ ServiceNow Ticket
 
 This telemetry is a core component of **Endpoint Detection and Response (EDR)**.
 
+![alt text](Sources/Day-10-Defender-pipeline.png)
+
 ---
 
 # Concept Overview
@@ -150,6 +152,8 @@ malware.exe
 
 This pattern often indicates **malicious macro execution**.
 
+![alt text](Sources/Day-10-Process-Tree.jpeg)
+
 ---
 
 # Important Attack Tools Using Processes
@@ -232,6 +236,8 @@ or ProcessCommandLine contains "-EncodedCommand"
 ```
 
 This detection identifies **obfuscated PowerShell execution**.
+
+![alt text](Sources/Day-10-Powershell-Encoded-Detection.png)
 
 ---
 
