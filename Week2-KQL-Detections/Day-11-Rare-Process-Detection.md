@@ -35,6 +35,8 @@ But a process appears only **1–3 times across the entire organization**, it ma
 
 This is considered **behavioral anomaly detection**.
 
+![alt text](Sources/Day-11-Anomaly-Detection-Process.png)
+
 ---
 
 # 2. Why This Exists in Enterprise Security
@@ -169,6 +171,8 @@ Important fields:
 | SHA256 | file hash |
 
 This table provides **detailed process execution telemetry**.
+
+![alt text](Sources/Day-11-Process-Execution.jpg)
 
 ---
 
@@ -470,6 +474,8 @@ invoice_update.exe
 ```
 
 Dropped through phishing.
+
+![alt text](Sources/Day-11-Process-Tree.jpg)
 
 ---
 
