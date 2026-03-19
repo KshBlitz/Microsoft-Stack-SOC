@@ -283,6 +283,8 @@ SigninLogs
 Low threshold = noisy
 High threshold = missed attack
 
+![alt text](Sources/Day-12-Threshold.jpeg)
+
 ---
 
 ### Example Evolution
@@ -383,6 +385,8 @@ Feedback to L2
 ↓
 Detection Updated
 ```
+
+![alt text](Sources/Day-12-Feedback-Loop.jpg)
 
 ---
 
