@@ -41,6 +41,8 @@ Tuning Iterations
 Stable Detection (High Signal)
 ```
 
+![alt text](Sources/Day-12-Detection-Lifecycle.gif)
+
 ---
 
 # 2. Why Detection Tuning is CRITICAL
@@ -62,6 +64,8 @@ Stable Detection (High Signal)
 → faster triage
 → real threats detected
 ```
+
+![alt text](Sources/Day-12-AlertvsNoise.jpeg)
 
 ---
 
