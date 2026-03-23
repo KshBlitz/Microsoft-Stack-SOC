@@ -74,9 +74,13 @@ ServiceNow Ticket
 
 This sits at the **core of SIEM operations** 
 
+![alt text](Sources/Day-13-Detection_Piepline.png)
+
 ---
 
 # 4. Types of Analytics Rules
+
+![alt text](Sources/Day-13-Flow-Analytical-Rule.jpg)
 
 ## 4.1 Scheduled Rules (Most Important)
 
@@ -289,6 +293,8 @@ Login → Execution → Lateral Movement
 * Contain
 * Close
 
+![alt text](Sources/Day-13-Alert_Incident-Correlation.png)
+
 ---
 
 # 9. Common Attack Scenarios
@@ -343,6 +349,8 @@ SigninLogs
 * Filters failed logins
 * Groups by IP
 * Detects high frequency attempts
+
+![alt text](Sources/Day-13-Detection_Piepline.png)
 
 ---
 
