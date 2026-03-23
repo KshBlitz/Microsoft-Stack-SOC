@@ -1,5 +1,7 @@
 # Day 14 – Detection Lifecycle
 
+![alt text](Sources/Day-14-Sentinel-SOC-Lab.png)
+
 ---
 
 # 1. Concept Overview
@@ -168,6 +170,7 @@ PowerShell execution
 =
 1 Incident
 ```
+![alt text](Sources/Day-14-Correlation.png)
 
 ---
 
@@ -278,6 +281,8 @@ Escalation or Closure
 - Privilege escalation?
 
 ### Step 5: Confirm True/False Positive
+
+![alt text](Sources/Day-14-SOC-Investigation-Flow.png)
 
 ---
 
