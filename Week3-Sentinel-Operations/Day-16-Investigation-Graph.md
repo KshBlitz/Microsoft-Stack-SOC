@@ -4,6 +4,8 @@
 
 Understand how incidents are **managed, prioritized, tracked, and resolved** inside an enterprise SOC using queue management, severity classification, SLA enforcement, and lifecycle handling.
 
+![alt text](Sources/Day-16-Incident-Queue-Dashboard.png)
+
 ---
 
 # 1. Concept Overview
@@ -249,6 +251,8 @@ Final state:
 * Time to first response
 * Time to resolution
 
+![alt text](Sources/Day-16-SLA-Chart.webp)
+
 ---
 
 ## 8.2 SLA Timer Behavior
@@ -308,6 +312,8 @@ Investigation
 ↓
 Closure
 ```
+
+![alt text](Sources/Day-16-Detection-Incident-Queue-Flow.png)
 
 ---
 
@@ -424,6 +430,8 @@ Examples:
 * adjust thresholds
 * incorporate asset criticality
 * use enrichment (threat intel)
+
+![alt text](Sources/Day-16-Incident-Response-Cycle.webp)
 
 ---
 
