@@ -23,6 +23,8 @@ User ↔ IP ↔ Device ↔ Process ↔ File ↔ Alert
 
 This allows analysts to understand the **full attack story instead of isolated alerts**.
 
+![alt text](Sources/Day-17-Investigation-Graph.png)
+
 ---
 
 # 2. Why This Exists in Enterprise Security
@@ -139,6 +141,8 @@ Investigation graphs rely on multiple telemetry sources:
 
 ### Email Logs
 - `OfficeActivity`
+
+![alt text](Sources/Day-17-Correlation.png)
 
 ---
 
@@ -269,6 +273,8 @@ union SigninLogs, DeviceProcessEvents
 | where TimeGenerated between (ago(1d) .. now())
 | sort by TimeGenerated asc
 ```
+
+![alt text](Sources/Day-17-Cyber-Kill-Chain.webp)
 
 ---
 
