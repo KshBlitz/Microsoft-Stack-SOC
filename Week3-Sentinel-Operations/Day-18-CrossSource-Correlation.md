@@ -59,6 +59,8 @@ Correlation solves:
 - Fragmented investigations
 - Missed attack progression
 
+![alt text](Sources/Day-18-Multi-Stage-Attack-Pipeline.jpg)
+
 ---
 
 ## 3. Architecture Context
@@ -86,6 +88,8 @@ SOC Investigation
 Key idea:
 
 **Sentinel is the correlation engine.**
+
+![alt text](Sources/Day-18-Architecture-Context.png)
 
 ---
 
