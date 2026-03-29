@@ -114,6 +114,8 @@ Attackers abuse it for:
 Execute command on remote machine
 ```
 
+![alt text](Sources/Day-21-PsExesvc-Flow.jpg)
+
 ---
 
 ### Behavior Pattern
@@ -148,6 +150,8 @@ Allows remote command execution via:
 ```
 wmic /node:<target> process call create
 ```
+
+![alt text](Sources/Day-21-WMI-Arch.png)
 
 ---
 
@@ -197,6 +201,7 @@ WinRM connection
 ↓
 Remote script execution
 ```
+![alt text](Sources/Day-21-WinRM.png)
 
 ---
 
@@ -369,6 +374,8 @@ Look for:
 * wmic → powershell
 * powershell → remote execution
 
+![alt text](Sources/Day-21-Process-Tree-Cheatsheet.jpeg)
+
 ---
 
 ### Step 3 – Identify Target Systems
@@ -402,6 +409,8 @@ Machine A → Machine B → Machine C
 ---
 
 # 9. Common Attack Scenarios
+
+![alt text](Sources/Day-21-Lateral-Movement.webp)
 
 ---
 
