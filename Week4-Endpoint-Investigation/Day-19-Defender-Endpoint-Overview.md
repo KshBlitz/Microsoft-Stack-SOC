@@ -90,6 +90,8 @@ Includes:
 * Registry changes
 * Logins
 
+![alt text](Sources/Day-19-Device-Timeline.png)
+
 ---
 
 ## 4.2 Alert Page
@@ -274,6 +276,8 @@ Suspicious file dropped
 External IP connection
 ```
 
+![alt text](Sources/Day-19-Process-Tree.png)
+
 ---
 
 ## Why It’s Critical
@@ -295,6 +299,8 @@ With timeline:
 * Detection rule triggered
 * Context of attack
 * Evidence collected
+
+![alt text](Sources/Day-19-Alert-Page.png)
 
 ---
 
@@ -332,6 +338,8 @@ Timeline = **deep investigation**
 
 File name can change
 Hash cannot (for same file)
+
+![alt text](Sources/Day-19-Hash.png)
 
 ---
 
@@ -559,9 +567,3 @@ This day connects directly to:
 * Day 18 → Cross-source correlation
 * Day 20 → Process Tree Analysis (next step)
 
-You are now moving from:
-**SIEM-level investigation → Endpoint-level deep forensics**
-
-This is where real SOC analysts become dangerous (in a good way).
-
----
