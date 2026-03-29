@@ -25,6 +25,8 @@ This shows:
 
 This is a **classic attack chain** used in real-world intrusions.
 
+![alt text](Sources/Day-20-Process.png)
+
 ---
 
 # 2. Why This Exists in Enterprise Security
@@ -292,6 +294,8 @@ powershell.exe
 ↓
 payload download
 ```
+
+![alt text](Sources/Day-20-Attack-Sim.jpeg)
 
 ---
 
