@@ -102,6 +102,8 @@ SOC Investigation
 
 This connects directly to the enterprise SOC pipeline 
 
+![alt text](Sources/Day-22-Identity-Logging-Arch.png)
+
 ---
 
 # 4. Core Components
@@ -149,6 +151,8 @@ Important fields:
 * ConditionalAccessStatus
 * RiskLevelDuringSignIn
 
+![alt text](Sources/Day-22-SignInLog.png)
+
 ---
 
 ### AuditLogs
@@ -179,6 +183,8 @@ Example:
 * 10 minutes later → login from USA
 
 Impossible physically → likely compromise
+
+![alt text](Sources/Day-22-Impossible-Travel-Detection.png)
 
 ---
 
@@ -220,6 +226,8 @@ Token abuse includes:
 * Access from multiple IPs using same session
 * Non-interactive suspicious access
 
+![alt text](Sources/Day-22-Token-Abuse.png)
+
 ---
 
 ### Detection Logic
@@ -249,6 +257,8 @@ SigninLogs
 * MFA disabled
 * New global admin assigned
 * App consent granted
+
+![alt text](Sources/Day-22-Suspicious-Audit.png)
 
 ---
 
