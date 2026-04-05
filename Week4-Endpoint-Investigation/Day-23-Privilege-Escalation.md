@@ -126,6 +126,9 @@ This aligns with the enterprise SOC pipeline described in your project
 * AbuseIPDB
 * Open Threat Feeds
 
+![alt text](Sources/Day-23-VirusTotal.jpg)
+![alt text](Sources/Day-23-OpenCTI.png)
+
 ### Internal Sources
 
 * past incidents
@@ -216,6 +219,8 @@ Detects:
 
 # 7. Investigation Workflow (SOC Thinking)
 
+![alt text](Sources/Day-23-Investigation.png)
+
 ## Step-by-Step Analyst Approach
 
 ### Step 1: Identify Indicator
@@ -284,6 +289,8 @@ Single IP
 ↓
 IP enrichment shows botnet activity
 ```
+
+![alt text](Sources/Day-23-Attack-Scenario.png)
 
 ---
 
@@ -453,6 +460,8 @@ Add reputation score
 ↓
 Auto-tag incident severity
 ```
+
+![alt text](Sources/Day-23-SOAR.png)
 
 ---
 
