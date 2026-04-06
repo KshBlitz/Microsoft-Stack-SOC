@@ -75,6 +75,8 @@ ServiceNow Ticket / Response
 
 Runbooks are where **human + process + telemetry meet**.
 
+![alt text](Sources/Day-24-SOC-Management.png)
+
 ---
 
 # 4. Core Components of a Runbook
@@ -147,6 +149,7 @@ Detection triggered:
 ```
 Multiple failed login attempts from same IP
 ```
+![alt text](Sources/Day-24-Brute-force-visualization.png)
 
 ---
 
@@ -168,6 +171,8 @@ Look for:
 * repeated failures
 * same IP
 * multiple users
+
+![alt text](Sources/Day-24-Entra-Logs.png)
 
 ---
 
@@ -245,6 +250,8 @@ Failed logins → Success → Post-login actions
 ```
 
 This is **attack confirmation phase**.
+
+![alt text](Sources/Day-24-Timeline-reconstruction.jpg)
 
 ---
 
