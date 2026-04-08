@@ -67,7 +67,7 @@ This integrates with:
 * Microsoft Sentinel (SIEM correlation)
 * Microsoft Entra ID (identity validation)
 
-
+![alt text](Sources/Day-25-EmailAttackFlow.png)
 
 
 ---
@@ -161,6 +161,8 @@ EmailEvents
 
 ## 7. Investigation Workflow
 
+![alt text](Sources/Day-25-DefenderEmailInvestigation.png)
+
 ### Step 1 – Alert Triage
 
 * Identify:
@@ -193,6 +195,8 @@ Analyze:
 * DMARC results
 * Received path
 
+![alt text](Sources/Day-25-EmailAuthProtocols.jpg)
+
 ---
 
 ### Step 4 – Message Trace
@@ -202,6 +206,8 @@ Trace email flow:
 * Was it delivered?
 * Who else received it?
 * Was it forwarded?
+
+![alt text](Sources/Day-25-MessageTrace.png)
 
 ---
 
@@ -256,6 +262,7 @@ Credentials stolen
 ↓
 Attacker logs in
 ```
+![alt text](Sources/Day-25-PhishingEmailExample.png)
 
 ---
 
