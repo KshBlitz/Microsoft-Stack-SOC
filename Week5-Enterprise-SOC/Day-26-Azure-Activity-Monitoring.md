@@ -479,6 +479,6 @@ Compromised user assigns Owner role and creates resources for persistence.
 
 Azure Activity Logs are critical for detecting **cloud privilege abuse, infrastructure manipulation, and persistence mechanisms** in enterprise SOC environments.
 
----
+
 
 
