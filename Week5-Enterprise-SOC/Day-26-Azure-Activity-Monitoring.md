@@ -100,6 +100,8 @@ This sits **parallel to endpoint & identity telemetry**.
 
 # 5. Log Sources / Data Sources
 
+![alt text](Sources/Day-26-AzureLogFIle.png)
+
 ### Primary Table
 
 ```
@@ -228,6 +230,7 @@ Assign Owner role
 ↓
 Full tenant control
 ```
+![alt text](Sources/Day-26-RBAC.png)
 
 ---
 
@@ -250,6 +253,7 @@ Attacker deletes resources/logs
 ↓
 Removes evidence
 ```
+![alt text](Sources/Day-26-ResourceDeletion.png)
 
 ---
 
