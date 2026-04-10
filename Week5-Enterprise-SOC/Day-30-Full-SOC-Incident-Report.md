@@ -31,6 +31,8 @@ The goal is to:
 * Validate compromise
 * Perform SOC-level incident response
 
+![alt text](Sources/Day-30-Attack-Chain.jpeg)
+
 ---
 
 # 🧠 Attack Overview (High-Level)
@@ -76,6 +78,7 @@ SOC Investigation
 ↓
 ServiceNow Ticket
 ```
+![alt text](Sources/Day-30-SOCWorkflow.jpeg)
 
 ---
 
@@ -149,6 +152,7 @@ SigninLogs
 | where ResultType == 0
 | where Location != "ExpectedCountry"
 ```
+![alt text](Sources/Day-30-Suspicious-Login.jpeg)
 
 ## Investigation Steps
 
@@ -214,6 +218,7 @@ DeviceProcessEvents
 | where ProcessCommandLine contains "powershell"
 | where ProcessCommandLine contains "-enc" or "download"
 ```
+![alt text](Sources/Day-30-PowershellExe.jpeg)
 
 ## Investigation Steps
 
@@ -252,6 +257,8 @@ Attacker moves across systems.
 * PsExec
 * WMI
 * Remote PowerShell
+
+![alt text](Sources/Day-30-LateralMovement.jpeg)
 
 ## Detection Logic
 
@@ -296,6 +303,8 @@ PowerShell Execution → 09:10
 Lateral Movement → 09:20
 ```
 
+![alt text](Sources/Day-30-Timeline-Reconstruction.jpeg)
+
 ---
 
 # 🧠 Detection Correlation Logic
@@ -321,6 +330,8 @@ This connects:
   * Suspicious login
   * PowerShell execution
   * Lateral movement
+
+![alt text](Sources/Day-30-SIEM-IncidentView.jpeg)
 
 ## Entity Mapping:
 
@@ -425,6 +436,7 @@ Response Actions Logged
 ↓
 Closed with Root Cause
 ```
+![alt text](Sources/Day-30-TicketFlow.jpeg)
 
 ---
 
