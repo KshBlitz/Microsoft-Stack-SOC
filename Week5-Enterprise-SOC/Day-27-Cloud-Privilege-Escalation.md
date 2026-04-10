@@ -69,6 +69,7 @@ SOC Investigation
 ↓
 ServiceNow Ticket
 ```
+![alt text](Sources/Day-27-ArchitectureFlow.jpeg)
 
 ---
 
@@ -101,6 +102,8 @@ ServiceNow Ticket
   * Role
   * Scope (subscription/resource group/resource)
 
+![alt text](Sources/Day-27-RBAC-Azure.jpeg)
+
 ---
 
 ## 5. Log Sources / Data Sources
@@ -122,6 +125,8 @@ ServiceNow Ticket
 
 * Who logged in
 * From where
+
+![alt text](Sources/Day-27-SignInEvents.jpeg)
 
 ---
 
@@ -166,6 +171,8 @@ Detect when:
 #### 4. Identity anomaly
 
 * New IP / location
+
+![alt text](Sources/Day-27-DetectionLogicFlow.jpeg)
 
 ---
 
@@ -224,6 +231,8 @@ After privilege gain, check:
 * Misconfiguration?
 * Malicious escalation?
 
+![alt text](Sources/Day-27-IR-Flow.jpeg)
+
 ---
 
 ## 8. Common Attack Scenarios
@@ -241,6 +250,7 @@ Assigns Owner role
 ↓
 Full control
 ```
+![alt text](Sources/Day-27-Cloud-Attack-Flow.jpeg)
 
 ---
 
@@ -292,6 +302,8 @@ Full control
 * Check attacker behavior post-escalation
 * Recommend remediation
 
+![alt text](Sources/Day-27-SOC-Activities.jpeg)
+
 ---
 
 ## 10. Detection Example (KQL)
@@ -303,6 +315,7 @@ AzureActivity
 | where OperationNameValue == "Microsoft.Authorization/roleAssignments/write"
 | project TimeGenerated, Caller, ResourceGroup, ActivityStatusValue
 ```
+![alt text](Sources/Day-27-KQL-Queries.jpeg)
 
 ---
 
