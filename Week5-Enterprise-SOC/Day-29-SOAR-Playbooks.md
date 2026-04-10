@@ -1,5 +1,7 @@
 # Day 29 – SOAR Automation (Microsoft Sentinel Playbooks)
 
+![alt text](Sources/Day-29-SOC-Automation.jpeg)
+
 ---
 
 ## Objective
@@ -69,6 +71,8 @@ SOC Investigation / Response
 ServiceNow Ticket
 ```
 
+![alt text](Sources/Day-29-Playbook.jpeg)
+
 SOAR is the **execution layer of SOC**.
 
 ---
@@ -83,6 +87,8 @@ SOAR is the **execution layer of SOC**.
   * Alert creation
   * Incident creation
   * Manual execution
+
+![alt text](Sources/Day-29-LogicAppWorkflow.jpeg)
 
 ---
 
@@ -139,6 +145,8 @@ Key sources:
 SOAR does NOT detect threats.
 
 It acts **after detection**.
+
+![alt text](Sources/Day-29-ThreatIntelligence.jpeg)
 
 ---
 
@@ -209,7 +217,7 @@ Analyst Investigation (if needed)
 ↓
 Response
 ```
-
+![alt text](Sources/Day-29-ManualvsAutomated.jpeg)
 ---
 
 ### Step-by-Step Investigation Thinking
