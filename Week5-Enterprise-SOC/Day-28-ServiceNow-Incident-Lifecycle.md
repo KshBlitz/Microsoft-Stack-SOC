@@ -1,5 +1,7 @@
 # Day 28 – ServiceNow Incident Lifecycle (Enterprise SOC)
 
+![alt text](Sources/Day-28-Servicenow-cycle.jpeg)
+
 ## Objective
 
 Understand how alerts generated in Microsoft Sentinel are converted into **trackable, accountable incidents inside ServiceNow**, and how SOC teams manage incidents using priority, severity, SLA, and assignment.
@@ -110,6 +112,8 @@ This is the **last mile of SOC operations**.
   * SLA
   * actions taken
 
+![alt text](Sources/Day-28-AlertvsIncidentvsCase.jpeg)
+
 ---
 
 # 5. Key Fields (CRITICAL FOR SOC)
@@ -154,6 +158,8 @@ Example:
 * Malware on Domain Controller → High Severity + P1
 * Failed login alert → Medium Severity + P3
 
+![alt text](Sources/Day-28-Incident-Priority.jpeg)
+
 ---
 
 ## 5.3 SLA (Service Level Agreement)
@@ -174,6 +180,8 @@ If SLA is violated:
 * Escalation triggered
 * Management notified
 
+![alt text](Sources/Day-28-SLA-Visualization.jpeg)
+
 ---
 
 ## 5.4 Assignment
@@ -186,6 +194,8 @@ Types:
 * Tier 2 SOC (L2)
 * Incident Response Team
 * Cloud Security Team
+
+![alt text](Sources/Day-28-SOC-workflow.jpeg)
 
 ---
 
@@ -204,6 +214,7 @@ Resolved
 ↓
 Closed
 ```
+![alt text](Sources/Day-28-TicketFlow.jpeg)
 
 ---
 
